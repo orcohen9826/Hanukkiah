@@ -23,6 +23,36 @@ This project is a Wi-Fi-controlled LED Hanukiah (Menorah) for Chanukah, featurin
 - **Arduino Framework**.
 - **Adafruit NeoPixel** library for LED animations.
 
+## Instructions for Assembly
+
+### LED Wiring
+
+1. **Prepare the LEDs**:
+   - Assign **3 LEDs for the shamash (main candle)**.
+   - Assign **2 LEDs for each of the other candles** (1–8).
+
+2. **Connect Power**:
+   - Connect the **ground (GND)** wires of all LEDs together.
+   - Connect the **5V wires** of all LEDs together.
+   - Create a single connection point from these 5V and GND wires to a **separate external power source** (do not power the LEDs directly from the controller, as it may burn out).
+   - Also connect the external power source’s GND and 5V lines to the corresponding pins on the controller.
+
+3. **Connect Data Lines**:
+   - Connect the **data-in pin** of the first LED in the first candle to the **D1 pin** on the Wemos D1 mini.
+   - Chain the LEDs by connecting the **data-out pin** of one LED to the **data-in pin** of the next LED, continuing for all candles in sequence.
+
+### Code Upload
+
+1. **Install PlatformIO**:
+   - Set up the PlatformIO environment with the Arduino framework.
+   - Install the Adafruit NeoPixel library.
+
+2. **Upload the Code**:
+   - Load the provided code into PlatformIO.
+   - Configure Wi-Fi credentials and LED settings if necessary.
+   - Upload the code to the Wemos D1 mini.
+
+
 ## How It Works
 
 1. **Power on** the Wemos D1 mini.
