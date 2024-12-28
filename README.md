@@ -1,9 +1,9 @@
 # Hanukkah LED Menorah (Hanukiah)
 
-![Menorah Overview](images/pic.jpg)
+
 
 This project is a Wi-Fi-controlled LED Hanukiah (Menorah) for Chanukah, featuring a custom flickering flame effect. The user can select the day via a web interface, and the corresponding number of "candles" (LED segments) light up. The project uses the NeoPixel library and includes STL files for 3D printing all parts needed for assembly.
-
+![Menorah Overview](images/pic.jpg)
 ## Features
 
 - **Wi-Fi Access Point**: A built-in web server allows you to connect and select the day of Hanukkah to light.
